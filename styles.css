@@ -1,0 +1,53 @@
+body {
+  background: linear-gradient(-45deg, #051b25, #092D35, #085568, #0D9276);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+img {
+  width: 600px;
+  height: 340px;
+}
+ 
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+  position: relative;
+}
+th, td p{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #991717;
+  position: relative;
+}
+th {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.footer-license{
+  text-align: center;
+  color: #0D9276;
+  font-size: large
+}
