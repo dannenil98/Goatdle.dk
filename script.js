@@ -61,13 +61,3 @@ const outputDiv = document.getElementById('randomGoat');
 const paragraph = document.createElement('p');
 paragraph.textContent = `${randomGoat.name} ${randomGoat.gender} ${randomGoat.profession} ${randomGoat.region} ${randomGoat.birthdate} ${randomGoat.bodyshape} ${randomGoat.alcoholism} `;
 outputDiv.appendChild(paragraph); 
-
-// Startsida
-const playButton = document.getElementById('play-button')
-const goatImg = document.getElementById('goat-img');
-
-playButton.addEventListener('click', function() {
-    goatImg.style.width = '30%';
-    goatImg.style.top = '25%';
-    playButton.style.display = "none";
-});
