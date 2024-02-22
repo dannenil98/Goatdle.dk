@@ -17,7 +17,7 @@ const alcoholismDiv = document.getElementById('alcoholism');
 // Loop through the array and display each object
 goats.forEach(goat => {
 
-    const nameParagraph = document.createElement('p');
+  const nameParagraph = document.createElement('p');
   nameParagraph.textContent = `${goat.name}`;
   nameDiv.appendChild(nameParagraph);
 
@@ -48,16 +48,26 @@ goats.forEach(goat => {
 
 // Function to select a random element from an array
 function getRandomElement(goats) {
-    return goats[Math.floor(Math.random() * goats.length)];
-    }
-      
-    // Select a random fruit object
-    const randomGoat = getRandomElement(goats);
-    
-    // Get the output div
-    const outputDiv = document.getElementById('randomGoat');
-    
-    // Display the selected fruit object
-    const paragraph = document.createElement('p');
-    paragraph.textContent = `${randomGoat.name} ${randomGoat.gender} ${randomGoat.profession} ${randomGoat.region} ${randomGoat.birthdate} ${randomGoat.bodyshape} ${randomGoat.alcoholism} `;
-    outputDiv.appendChild(paragraph);
+  return goats[Math.floor(Math.random() * goats.length)];
+}
+  
+// Select a random fruit object
+const randomGoat = getRandomElement(goats);
+
+// Get the output div
+const outputDiv = document.getElementById('randomGoat');
+
+// Display the selected fruit object
+const paragraph = document.createElement('p');
+paragraph.textContent = `${randomGoat.name} ${randomGoat.gender} ${randomGoat.profession} ${randomGoat.region} ${randomGoat.birthdate} ${randomGoat.bodyshape} ${randomGoat.alcoholism} `;
+outputDiv.appendChild(paragraph); 
+
+// Startsida
+const playButton = document.getElementById('play-button')
+const goatImg = document.getElementById('goat-img');
+
+playButton.addEventListener('click', function() {
+    goatImg.style.width = '30%';
+    goatImg.style.top = '25%';
+    playButton.style.display = "none";
+});
